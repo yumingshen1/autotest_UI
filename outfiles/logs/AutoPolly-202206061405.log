@@ -1,0 +1,65 @@
+2022-06-06 14:06:39,258 - ERROR - basePage.py[48]:None元素定位不到
+2022-06-06 14:06:39,260 - ERROR - basePage.py[49]:Traceback (most recent call last):
+  File "/Users/shenyuming/PycharmProjects/autotest_UI/common/basePage.py", line 43, in get_element
+    return self.driver.find_element(*locator)
+  File "/usr/local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1240, in find_element
+    'value': value})['value']
+  File "/usr/local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 418, in execute
+    self.error_handler.check_response(response)
+  File "/usr/local/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=92.0.4515.107)
+Stacktrace:
+0   chromedriver                        0x0000000102fdbda4 chromedriver + 2538916
+1   chromedriver                        0x0000000103571928 chromedriver + 8395048
+2   chromedriver                        0x0000000102d98e60 chromedriver + 167520
+3   chromedriver                        0x0000000102d9b8e0 chromedriver + 178400
+4   chromedriver                        0x0000000102d9b74c chromedriver + 177996
+5   chromedriver                        0x0000000102d9b988 chromedriver + 178568
+6   chromedriver                        0x0000000102dc78b4 chromedriver + 358580
+7   chromedriver                        0x0000000102df0740 chromedriver + 526144
+8   chromedriver                        0x0000000102dbd158 chromedriver + 315736
+9   chromedriver                        0x0000000102fa8cb0 chromedriver + 2329776
+10  chromedriver                        0x0000000102fb9030 chromedriver + 2396208
+11  chromedriver                        0x0000000102f8ff64 chromedriver + 2228068
+12  chromedriver                        0x0000000102fb9fc4 chromedriver + 2400196
+13  chromedriver                        0x0000000102f9fc5c chromedriver + 2292828
+14  chromedriver                        0x0000000102fd07d8 chromedriver + 2492376
+15  chromedriver                        0x0000000102fd094c chromedriver + 2492748
+16  chromedriver                        0x0000000102fe0768 chromedriver + 2557800
+17  libsystem_pthread.dylib             0x000000019511a06c _pthread_start + 320
+18  libsystem_pthread.dylib             0x0000000195114da0 thread_start + 8
+
+
+2022-06-06 14:06:44,992 - ERROR - basePage.py[48]:用户名元素定位不到
+2022-06-06 14:06:44,992 - ERROR - basePage.py[49]:Traceback (most recent call last):
+  File "/Users/shenyuming/PycharmProjects/autotest_UI/common/basePage.py", line 43, in get_element
+    return self.driver.find_element(*locator)
+  File "/usr/local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1240, in find_element
+    'value': value})['value']
+  File "/usr/local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 418, in execute
+    self.error_handler.check_response(response)
+  File "/usr/local/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="username"]"}
+  (Session info: chrome=92.0.4515.107)
+Stacktrace:
+0   chromedriver                        0x0000000102fdbda4 chromedriver + 2538916
+1   chromedriver                        0x0000000103571928 chromedriver + 8395048
+2   chromedriver                        0x0000000102d98e60 chromedriver + 167520
+3   chromedriver                        0x0000000102dc7b48 chromedriver + 359240
+4   chromedriver                        0x0000000102df0740 chromedriver + 526144
+5   chromedriver                        0x0000000102dbd158 chromedriver + 315736
+6   chromedriver                        0x0000000102fa8cb0 chromedriver + 2329776
+7   chromedriver                        0x0000000102fb9030 chromedriver + 2396208
+8   chromedriver                        0x0000000102f8ff64 chromedriver + 2228068
+9   chromedriver                        0x0000000102fb9fc4 chromedriver + 2400196
+10  chromedriver                        0x0000000102f9fc5c chromedriver + 2292828
+11  chromedriver                        0x0000000102fd07d8 chromedriver + 2492376
+12  chromedriver                        0x0000000102fd094c chromedriver + 2492748
+13  chromedriver                        0x0000000102fe0768 chromedriver + 2557800
+14  libsystem_pthread.dylib             0x000000019511a06c _pthread_start + 320
+15  libsystem_pthread.dylib             0x0000000195114da0 thread_start + 8
+
+

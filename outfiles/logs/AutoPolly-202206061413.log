@@ -1,0 +1,68 @@
+2022-06-06 14:14:40,496 - ERROR - basePage.py[51]:None元素定位不到
+2022-06-06 14:14:40,497 - ERROR - basePage.py[52]:Traceback (most recent call last):
+  File "/Users/shenyuming/PycharmProjects/autotest_UI/common/basePage.py", line 45, in get_element
+    return WebDriverWait(self.driver,10,0.5).until(EC.visibility_of_element_located(locator))
+  File "/usr/local/lib/python3.7/site-packages/selenium/webdriver/support/wait.py", line 82, in until
+    raise e
+  File "/usr/local/lib/python3.7/site-packages/selenium/webdriver/support/wait.py", line 78, in until
+    value = method(self._driver)
+  File "/usr/local/lib/python3.7/site-packages/selenium/webdriver/support/expected_conditions.py", line 127, in _predicate
+    raise e
+  File "/usr/local/lib/python3.7/site-packages/selenium/webdriver/support/expected_conditions.py", line 125, in _predicate
+    return _element_if_visible(driver.find_element(*locator))
+  File "/usr/local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1240, in find_element
+    'value': value})['value']
+  File "/usr/local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 418, in execute
+    self.error_handler.check_response(response)
+  File "/usr/local/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=92.0.4515.107)
+Stacktrace:
+0   chromedriver                        0x0000000104717da4 chromedriver + 2538916
+1   chromedriver                        0x0000000104cad928 chromedriver + 8395048
+2   chromedriver                        0x00000001044d4e60 chromedriver + 167520
+3   chromedriver                        0x00000001044d78e0 chromedriver + 178400
+4   chromedriver                        0x00000001044d774c chromedriver + 177996
+5   chromedriver                        0x00000001044d7988 chromedriver + 178568
+6   chromedriver                        0x00000001045038b4 chromedriver + 358580
+7   chromedriver                        0x000000010452c740 chromedriver + 526144
+8   chromedriver                        0x00000001044f9158 chromedriver + 315736
+9   chromedriver                        0x00000001046e4cb0 chromedriver + 2329776
+10  chromedriver                        0x00000001046f5030 chromedriver + 2396208
+11  chromedriver                        0x00000001046cbf64 chromedriver + 2228068
+12  chromedriver                        0x00000001046f5fc4 chromedriver + 2400196
+13  chromedriver                        0x00000001046dbc5c chromedriver + 2292828
+14  chromedriver                        0x000000010470c7d8 chromedriver + 2492376
+15  chromedriver                        0x000000010470c94c chromedriver + 2492748
+16  chromedriver                        0x000000010471c768 chromedriver + 2557800
+17  libsystem_pthread.dylib             0x000000019511a06c _pthread_start + 320
+18  libsystem_pthread.dylib             0x0000000195114da0 thread_start + 8
+
+
+2022-06-06 14:14:52,249 - ERROR - basePage.py[51]:用户名元素定位不到
+2022-06-06 14:14:52,249 - ERROR - basePage.py[52]:Traceback (most recent call last):
+  File "/Users/shenyuming/PycharmProjects/autotest_UI/common/basePage.py", line 45, in get_element
+    return WebDriverWait(self.driver,10,0.5).until(EC.visibility_of_element_located(locator))
+  File "/usr/local/lib/python3.7/site-packages/selenium/webdriver/support/wait.py", line 89, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+0   chromedriver                        0x0000000104717da4 chromedriver + 2538916
+1   chromedriver                        0x0000000104cad928 chromedriver + 8395048
+2   chromedriver                        0x00000001044d4e60 chromedriver + 167520
+3   chromedriver                        0x0000000104503b48 chromedriver + 359240
+4   chromedriver                        0x000000010452c740 chromedriver + 526144
+5   chromedriver                        0x00000001044f9158 chromedriver + 315736
+6   chromedriver                        0x00000001046e4cb0 chromedriver + 2329776
+7   chromedriver                        0x00000001046f5030 chromedriver + 2396208
+8   chromedriver                        0x00000001046cbf64 chromedriver + 2228068
+9   chromedriver                        0x00000001046f5fc4 chromedriver + 2400196
+10  chromedriver                        0x00000001046dbc5c chromedriver + 2292828
+11  chromedriver                        0x000000010470c7d8 chromedriver + 2492376
+12  chromedriver                        0x000000010470c94c chromedriver + 2492748
+13  chromedriver                        0x000000010471c768 chromedriver + 2557800
+14  libsystem_pthread.dylib             0x000000019511a06c _pthread_start + 320
+15  libsystem_pthread.dylib             0x0000000195114da0 thread_start + 8
+
+

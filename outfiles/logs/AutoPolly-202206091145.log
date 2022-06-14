@@ -1,0 +1,42 @@
+2022-06-09 11:46:28,316 - ERROR - basePage.py[60]:None元素定位不到
+2022-06-09 11:46:28,319 - ERROR - basePage.py[61]:Traceback (most recent call last):
+  File "/Users/shenyuming/PycharmProjects/autotest_UI/common/basePage.py", line 54, in get_element
+    return WebDriverWait(self.driver,ENV.WEB_DRIVER_WAIT_TIMEOUT,ENV.POLL_FREQUENCY_TIME).until(EC.visibility_of_element_located(locator))
+  File "/usr/local/lib/python3.7/site-packages/selenium/webdriver/support/wait.py", line 82, in until
+    raise e
+  File "/usr/local/lib/python3.7/site-packages/selenium/webdriver/support/wait.py", line 78, in until
+    value = method(self._driver)
+  File "/usr/local/lib/python3.7/site-packages/selenium/webdriver/support/expected_conditions.py", line 127, in _predicate
+    raise e
+  File "/usr/local/lib/python3.7/site-packages/selenium/webdriver/support/expected_conditions.py", line 125, in _predicate
+    return _element_if_visible(driver.find_element(*locator))
+  File "/usr/local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1240, in find_element
+    'value': value})['value']
+  File "/usr/local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 418, in execute
+    self.error_handler.check_response(response)
+  File "/usr/local/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=92.0.4515.107)
+Stacktrace:
+0   chromedriver                        0x0000000100b63da4 chromedriver + 2538916
+1   chromedriver                        0x00000001010f9928 chromedriver + 8395048
+2   chromedriver                        0x0000000100920e60 chromedriver + 167520
+3   chromedriver                        0x00000001009238e0 chromedriver + 178400
+4   chromedriver                        0x000000010092374c chromedriver + 177996
+5   chromedriver                        0x0000000100923988 chromedriver + 178568
+6   chromedriver                        0x000000010094f8b4 chromedriver + 358580
+7   chromedriver                        0x0000000100978740 chromedriver + 526144
+8   chromedriver                        0x0000000100945158 chromedriver + 315736
+9   chromedriver                        0x0000000100b30cb0 chromedriver + 2329776
+10  chromedriver                        0x0000000100b41030 chromedriver + 2396208
+11  chromedriver                        0x0000000100b17f64 chromedriver + 2228068
+12  chromedriver                        0x0000000100b41fc4 chromedriver + 2400196
+13  chromedriver                        0x0000000100b27c5c chromedriver + 2292828
+14  chromedriver                        0x0000000100b587d8 chromedriver + 2492376
+15  chromedriver                        0x0000000100b5894c chromedriver + 2492748
+16  chromedriver                        0x0000000100b68768 chromedriver + 2557800
+17  libsystem_pthread.dylib             0x000000019c8de06c _pthread_start + 320
+18  libsystem_pthread.dylib             0x000000019c8d8da0 thread_start + 8
+
+

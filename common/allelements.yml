@@ -1,0 +1,65 @@
+LoginPage: #登录 - 类名
+  username_input: ['id','username']
+  password_input: ['id','password']
+  login_button: ['id','btnLogin']
+  #登录后首页操作退出
+  mainpage_text: ['css selector','.no-redirect'] #首页文本
+  personal_center_button: ['css selector','.user-avatar']#用户中心
+  logout_button: ['css selector',"a+li+li>span"] # 退出按钮
+
+MainPage: # 页面-类名
+  #左上角菜单栏
+  home_button: ['css selector','.hamburger']
+  #商品管理
+  shop_guanli: ['xpath',"//span[contains(text(),'商品管理')]"]
+  #添加商品
+  shop_add: ['xpath','//*[@id="app"]/div/div[1]/div/ul/div/li[2]/ul/a[2]/li']
+   ## 商品列表
+  shop_list: ['xpath',"//span[contains(text(),'商品列表')]"]
+  ## 品牌管理
+  shop_anage: ['xpath',"//span[text()='品牌管理']"]
+
+
+AddProductPage: #添加商品页面
+  #点击商品分类
+  product_kind_select: ['css selector','form > div:nth-child(1) .el-cascader__label']
+  # 一级菜单， {}  是为了传参，选择一级菜单的哪一项
+  product_kind_select_index1: ['css selector','ul.el-cascader-menu>li:nth-child({})']
+  #二级菜单 {}  是为了传参，选择二级菜单的哪一项
+  product_kind_select_index2: ['css selector','ul+ul.el-cascader-menu>li:nth-child({})']
+  #商品名称
+  product_name: ['css selector',"label[for='name'] + div input"]
+  #副标题
+  product_subtitle: ['css selector',"label[for='subTitle'] + div input"]
+  #商品品牌
+  product_brand_select: ['css selector',"label[for='brandId'] + div input"]
+  #品牌一级列表
+  product_brand_select_idx: ['css selector','body > div:nth-child(8) ul > li:nth-child({})']
+  #点击下一步填写促销商品
+  next_commodity_promotion_btn: ['xpath',"//span[contains(text(),'下一步，填写商品促销')]"]
+  ##点击下一步填写商品属性
+  next_product_attribute_btn: ['xpath',"//span[contains(text(),'下一步，填写商品属性')]"]
+  #点击下一步，选择商品关联
+  netxt_product_related_btn: ['xpath',"//span[contains(text(),'下一步，选择商品关联')]"]
+  #完成，提交商品
+  comple_button: ['xpath',"//span[contains(text(),'完成，提交商品')]"]
+  #确定
+  subit_button: ['xpath',"//span[contains(text(),'确定')]"]
+  #菜单
+  home_button: ['css selector','.hamburger']
+
+ProductListPage:  ##商品列表
+  #商品名称
+  first_productname: ['css selector',"tbody > tr:nth-child(1) > td:nth-child(4) p:nth-child(1)"]
+  #菜单
+  home_button: ['css selector','.hamburger']
+
+BrandManagePage: #品牌管理
+  #所有品牌名字
+  all_brand_name_txt: ['css selector',"tbody > tr > td:nth-child(3)"]
+  #第一个品牌的名字
+  first_brand_name_text: ['css selector',"tbody > :nth-child(1) > :nth-child(3)>div"]
+  #搜索框
+  search_input: ['css selector','div.el-form-item__content >div .el-input__inner']
+  #点击搜索
+  search_button: ['xpath',"//span[contains(text(),'查询结果')]"]

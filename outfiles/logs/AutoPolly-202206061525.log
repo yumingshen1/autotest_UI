@@ -1,0 +1,26 @@
+2022-06-06 15:26:08,235 - ERROR - basePage.py[51]:None元素定位不到
+2022-06-06 15:26:08,236 - ERROR - basePage.py[52]:Traceback (most recent call last):
+  File "/Users/shenyuming/PycharmProjects/autotest_UI/common/basePage.py", line 45, in get_element
+    return WebDriverWait(self.driver,10,0.5).until(EC.visibility_of_element_located(locator))
+  File "/usr/local/lib/python3.7/site-packages/selenium/webdriver/support/wait.py", line 89, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+0   chromedriver                        0x0000000102a7fda4 chromedriver + 2538916
+1   chromedriver                        0x0000000103015928 chromedriver + 8395048
+2   chromedriver                        0x000000010283ce60 chromedriver + 167520
+3   chromedriver                        0x000000010286bb48 chromedriver + 359240
+4   chromedriver                        0x0000000102894740 chromedriver + 526144
+5   chromedriver                        0x0000000102861158 chromedriver + 315736
+6   chromedriver                        0x0000000102a4ccb0 chromedriver + 2329776
+7   chromedriver                        0x0000000102a5d030 chromedriver + 2396208
+8   chromedriver                        0x0000000102a33f64 chromedriver + 2228068
+9   chromedriver                        0x0000000102a5dfc4 chromedriver + 2400196
+10  chromedriver                        0x0000000102a43c5c chromedriver + 2292828
+11  chromedriver                        0x0000000102a747d8 chromedriver + 2492376
+12  chromedriver                        0x0000000102a7494c chromedriver + 2492748
+13  chromedriver                        0x0000000102a84768 chromedriver + 2557800
+14  libsystem_pthread.dylib             0x000000019511a06c _pthread_start + 320
+15  libsystem_pthread.dylib             0x0000000195114da0 thread_start + 8
+
+

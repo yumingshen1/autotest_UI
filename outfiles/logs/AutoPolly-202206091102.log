@@ -1,0 +1,9 @@
+2022-06-09 11:03:35,669 - ERROR - basePage.py[60]:None元素定位不到
+2022-06-09 11:03:35,671 - ERROR - basePage.py[61]:Traceback (most recent call last):
+  File "/Users/shenyuming/PycharmProjects/autotest_UI/common/basePage.py", line 54, in get_element
+    return WebDriverWait(self.driver,ENV.WEB_DRIVER_WAIT_TIMEOUT,ENV.POLL_FREQUENCY_TIME).until(EC.visibility_of_element_located(locator))
+  File "/usr/local/lib/python3.7/site-packages/selenium/webdriver/support/wait.py", line 89, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+

@@ -1,0 +1,26 @@
+2022-06-09 11:39:54,401 - ERROR - basePage.py[60]:品牌以及列表元素定位不到
+2022-06-09 11:39:54,403 - ERROR - basePage.py[61]:Traceback (most recent call last):
+  File "/Users/shenyuming/PycharmProjects/autotest_UI/common/basePage.py", line 54, in get_element
+    return WebDriverWait(self.driver,ENV.WEB_DRIVER_WAIT_TIMEOUT,ENV.POLL_FREQUENCY_TIME).until(EC.visibility_of_element_located(locator))
+  File "/usr/local/lib/python3.7/site-packages/selenium/webdriver/support/wait.py", line 89, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+0   chromedriver                        0x00000001025f3da4 chromedriver + 2538916
+1   chromedriver                        0x0000000102b89928 chromedriver + 8395048
+2   chromedriver                        0x00000001023b0e60 chromedriver + 167520
+3   chromedriver                        0x00000001023dfb48 chromedriver + 359240
+4   chromedriver                        0x0000000102408740 chromedriver + 526144
+5   chromedriver                        0x00000001023d5158 chromedriver + 315736
+6   chromedriver                        0x00000001025c0cb0 chromedriver + 2329776
+7   chromedriver                        0x00000001025d1030 chromedriver + 2396208
+8   chromedriver                        0x00000001025a7f64 chromedriver + 2228068
+9   chromedriver                        0x00000001025d1fc4 chromedriver + 2400196
+10  chromedriver                        0x00000001025b7c5c chromedriver + 2292828
+11  chromedriver                        0x00000001025e87d8 chromedriver + 2492376
+12  chromedriver                        0x00000001025e894c chromedriver + 2492748
+13  chromedriver                        0x00000001025f8768 chromedriver + 2557800
+14  libsystem_pthread.dylib             0x000000019c8de06c _pthread_start + 320
+15  libsystem_pthread.dylib             0x000000019c8d8da0 thread_start + 8
+
+

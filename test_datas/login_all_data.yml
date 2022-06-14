@@ -1,0 +1,5 @@
+- ['管理员正确的账号密码','鸿星尔克286','123456',['css selector','.no-redirect'],'首页']
+- ['普通用户正确的账号密码','PW179038','123456',['css selector','.no-redirect'],'首页']
+- ['管理员密码错误','鸿星尔克286','12345',['css selector','.el-message--error'],'密码不正确！']
+- ['普通用户密码少于3位','PW179038','12',['css selector','.el-form-item__error'],'密码不能小于3位']
+- ['不存在的用户名','鸿星','123456',['css selector','.el-message.el-message--error'],'用户名或密码错误']

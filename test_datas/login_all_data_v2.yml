@@ -1,0 +1,2 @@
+- ['管理员正确的账号密码','鸿星尔克286','123456',['css selector','.no-redirect'],'首页1']
+- ['不存在的用户名','鸿星','123456',['css selector','.el-message.el-message--error'],'用户名或密码错误']
